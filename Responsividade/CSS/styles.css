@@ -1,0 +1,36 @@
+h1{
+    color: red;
+}
+
+/* responsavel por a responsividade */
+@media screen and (max-width: 500px){  
+    h1 {
+        color: blue;
+    }  
+}
+
+p{
+    background-color: red;
+    color: #000;
+}
+/* responsavel por a responsividade */
+@MEDIA screen and (min-width: 800px){
+    p{
+        background-color: rgb(253, 253, 253);
+        color: #ff0000;
+    }
+}
+
+/* 600px e abaixo: celulares */
+/* 768px ate 600px: tablets */
+/* 992 e acima: laptops e desktop */
+
+h3{
+    display: none;
+}
+
+@media screen and (orientation: landscape)  {
+    h3{
+        display: block;
+    }
+}

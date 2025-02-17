@@ -1,0 +1,25 @@
+h4{
+    color: aqua;
+}
+
+.Minhaclass{
+    background-color: blue;
+}
+
+#meuTexto{
+    background-color: rgb(208, 255, 0);
+    font-size: 20px;
+}
+
+h2{
+    border-bottom: 2px solid red;
+}
+
+
+.titulo {
+    border-bottom: 3px solid blue;
+}
+
+#algumtitulo{
+    border-bottom: 3px solid rgb(30, 255, 0);
+}
