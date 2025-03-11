@@ -65,4 +65,55 @@ console.log(mySecundObject);
 
 console.log(mySecundObject.a);
 
-console.log(Object.getPrototypeOf(mySecundObject) === myObjeto)
+console.log(Object.getPrototypeOf(mySecundObject) === myObjeto);
+
+//  5- classes basicas 
+
+const cachorro = {
+    raca: null,
+    porte: null,
+}
+
+const pastoAlemao = Object.create(cachorro);
+
+pastoAlemao.raca = "Pastor Alemão";
+pastoAlemao.porte = "Medio";
+
+console.log(pastoAlemao.raca);
+console.log(pastoAlemao.porte);
+
+
+const pitbull = Object.create(cachorro);
+
+pitbull.raca = "pitbull";
+pitbull.porte = "grande";
+
+console.log(pitbull.raca);
+console.log(pitbull.porte);
+
+// 6 - funcao como classe - funcao construtora
+
+function criarCachorro(nome, raca) {
+
+    const cachorro = Object.create({});
+
+    cachorro.nome = nome;
+    cachorro.raca = raca;
+
+    return cachorro
+}
+
+const apolo = criarCachorro("Apolo", "labrador");
+
+console.log(apolo);
+
+// 7 - funcoes como classe
+
+function Cachorro(nome, raca) {
+    this.nome = nome;
+    this.raca = raca;
+}
+
+const husky = new Cachorro("ozzy", "Husky");
+
+console.log(husky);
