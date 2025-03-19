@@ -117,3 +117,47 @@ function Cachorro(nome, raca) {
 const husky = new Cachorro("ozzy", "Husky");
 
 console.log(husky);
+
+// 8 - metodos na funcao construtora
+
+Cachorro.prototype.uivar = function () {
+    console.log("auuu!");
+};
+
+console.log(Cachorro.prototype);
+
+husky.uivar();
+
+// 9 - classes 
+class CachorroClasse{
+    constructor(nome,raca){
+        this.nome = nome;
+        this.raca = raca;
+    }
+}
+
+const jeff = new CachorroClasse("Jeff", "labrador");
+
+console.log(jeff);
+
+console.log(Object.getPrototypeOf(jeff));
+console.log(jeff.nome);
+
+// mais sobre class
+
+class Caminhao {
+    constructor(eixo, cor){
+        this.eixo = eixo;
+        this.cor = cor;
+    }
+
+    descreverCaminho(){
+        console.log("este caminhão tem " + this.eixo + " e é da cor: " + this.cor)
+    }
+}
+
+const scania = new Caminhao(4,"branco");
+
+console.log(scania);
+
+scania.descreverCaminho();
